@@ -1,0 +1,36 @@
+// constants/activityLogConstants.js
+const ACTIVITY_ACTIONS = Object.freeze({
+  VIEW: "VIEW",
+  CREATE: "CREATE",
+  UPDATE: "UPDATE",
+  DELETE: "DELETE",
+  LOGIN: "LOGIN",
+  LOGOUT: "LOGOUT",
+  STATUS:"STATUS"
+});
+
+const ACTIVITY_RESOURCES = Object.freeze({
+  CELEBRITY: "CELEBRITY",
+  SECTION: "SECTION",
+  PROFESSION: "PROFESSION",
+  LANGUAGE: "LANGUAGE",
+  TRIVIA: "TRIVIA",
+  USER: "USER",
+  ROLE: "ROLE",
+  AUTH: "AUTH",
+  MASTER: "MASTER",
+  SETTINGS: "SETTINGS",
+  PRIVILEGE: "PRIVILEGE",
+});
+
+const ACTIVITY_STATUS = Object.freeze({
+  SUCCESS: "SUCCESS",
+  FAILED: "FAILED",
+  PENDING: "PENDING",
+});
+
+module.exports = {
+  ACTIVITY_ACTIONS,
+  ACTIVITY_RESOURCES,
+  ACTIVITY_STATUS,
+};

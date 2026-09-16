@@ -1,0 +1,27 @@
+const mongoose = require("mongoose");
+
+const urlRedirectionSchema = new mongoose.Schema(
+  {
+   itemId: {
+      type: mongoose.Schema.Types.ObjectId,
+      default: null,
+    },
+
+    type: {
+      type: String,
+    },
+
+    oldUrl: {
+      type: String,
+    },
+
+    newUrl: {
+      type: String,
+    },
+  },
+  {
+    timestamps: true, // createdAt & updatedAt
+  }
+);
+
+module.exports = mongoose.model("UrlRedirection", urlRedirectionSchema);
