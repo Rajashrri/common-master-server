@@ -7,7 +7,7 @@ const {
   updateServiceCategory,
   deleteServiceCategory,
   changeStatus,
-} = require("../controllers/serviceCategoryController");
+} = require("../controllers/ServiceCategoryController");
 
 // Add
 router.post("/add-service-category", addServiceCategory);
